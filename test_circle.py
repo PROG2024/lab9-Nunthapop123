@@ -12,11 +12,7 @@ import unittest
 import math
 
 
-# TODO write 3 tests as described above
 class TestCircle(unittest.TestCase):
-
-    def setUp(self):
-        pass
 
     def test_add_typical_value(self):
         circle1 = Circle(3)
