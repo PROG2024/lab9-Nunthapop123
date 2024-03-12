@@ -33,6 +33,8 @@ class TestCircle(unittest.TestCase):
         self.assertEqual(math.pi * 3 * 3, new_circle.get_area())
 
     def test_circle_have_negative_radius(self):
-        circle1 = Circle(-1)
         with self.assertRaises(Exception):
-            circle1.get_radius()
+            Circle(-1)
+
+if __name__ == '__main__':
+    unittest.main()
